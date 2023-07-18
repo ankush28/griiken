@@ -1,0 +1,153 @@
+.homeDashBox{
+  
+    margin-top: 60px;
+    &__mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+}
+.title{
+    font-size: 50px;
+    margin: 0px;
+    margin-top: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.title span{
+    color: var(--logo-color);
+}
+.subheading{
+    margin: 0px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.subtitle{
+    margin: 0px;
+    font-size: 26px;
+    color: var(--subtext-color);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.homeDashBox-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+    padding-right: 110px;
+    &__tablet{
+        padding-left: 50px;
+        padding-right: 50px!important;
+        padding-top: 50px;
+
+        .title{
+            font-size: 40px;
+        }
+        .subtitle{
+            font-size: 20px;
+        }
+        .subheading{
+            font-size: 14px;
+        }
+    }
+
+    &__mobile{
+        padding: 20px;
+        .title{
+            font-size: 40px;
+            margin-top: 15px;
+        }
+        .subtitle{
+            font-size: 16px;
+        }
+        .subheading{
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        button{
+            padding: 6px 10px;
+            font-size: 18px;
+        }
+    }
+}
+.homeDashBox-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+
+    &__mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    position: relative;
+    padding: 8px 12px;
+
+    font-size: 20px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--logo-color);
+    overflow: hidden;
+    transition: 0.6s;
+  }
+  
+  button:last-child{
+    color: white;
+    border-color: white;
+  }
+  button:before, button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+  }
+  button:before{
+    width: 60px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:after{
+    width: 30px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:hover:before,
+  button:hover:after{
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+  }
+  button:hover{
+    color: #f2f2f2;
+  }
+  
+  button:hover:last-child{
+    background: var(--logo-color);
+  }
