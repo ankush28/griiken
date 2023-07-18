@@ -1,12 +1,15 @@
+
 .homeDashBox{
-  
-    margin-top: 60px;
+    margin-bottom: 120px;
+    margin-top: 8%;
     &__mobile{
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 20px;
+        margin-top: 18%;
+        margin-bottom: 40px;
     }
 }
+
 .title{
     font-size: 50px;
     margin: 0px;
@@ -53,7 +56,7 @@
     &__mobile{
         padding: 20px;
         .title{
-            font-size: 38px;
+            font-size: 36px!important;
             margin-top: 15px;
         }
         .subtitle{
@@ -82,7 +85,6 @@
         margin-bottom: 30px;
     }
 }
-
 
 
 
@@ -150,4 +152,31 @@ button{
   
   button:hover:last-child{
     background: var(--logo-color);
+  }
+
+
+
+
+ 
+  .featureTitle{
+    font-size: 35px;
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 20px;
+    transition: all .3s ease-in-out;
+    &__mobile{
+        font-size:24px;
+        margin-bottom: 9px;
+    }
+  }
+  .featureTitle:hover{
+    color: var(--logo-color);
+  }
+  .featuresubtitle{
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  .animate:hover{
+    transition: all .5s ease;
+    transform:  rotateY(0.7rad);
   }
