@@ -1,0 +1,38 @@
+<div [ngClass]="{ 'fixed': isNavbarFixed }" fxShow.gt-xs="true" fxShow.sm="false" fxShow.xs="false" class="nav">
+    <div class="logo">
+        <img width="190px" src="../../../assets/logo-no-background.png" />
+    </div>
+    <div class="navsections">
+        <ul>
+            <li (click)="scrollToSection('home')" [ngClass]="{ 'active': activeSection === 'home' }"><a>Home</a></li>
+            <li (click)="scrollToSection('features')" [ngClass]="{ 'active': activeSection === 'features' }"><a>Features</a></li>
+            <li (click)="scrollToSection('solutions')" [ngClass]="{ 'active': activeSection === 'solutions' }"><a>Solutions</a></li>
+            <li (click)="scrollToSection('process')" [ngClass]="{ 'active': activeSection === 'process' }"><a>Process</a></li>
+            <li (click)="scrollToSection('pricing')" [ngClass]="{ 'active': activeSection === 'pricing' }"><a>Pricing</a></li>
+            <li (click)="scrollToSection('blogs')" [ngClass]="{ 'active': activeSection === 'blogs' }"><a>Blogs</a></li>
+        </ul>
+    </div>
+        <button class="navcontactus">Contact us</button>
+</div>
+
+<div class="nav__mobile" fxShow.sm="true" fxShow.xs="true" fxShow.gt-xs="false">
+    <div class="navmobile-section">
+        <div (click)="isMenuOpen = !isMenuOpen" class="hamburger">
+            <i *ngIf="!isMenuOpen" class='bx bx-menu'></i>
+            <i *ngIf="isMenuOpen" class='bx bx-x'></i>
+        </div>
+        <div class="logo">
+            <h1 style="margin: 0px;">Griiken</h1>
+        </div>
+    </div>
+    <div  [@fadeInOut]  *ngIf="isMenuOpen" class="navbox_mobile">
+        <ul fxLayout="column" fxLayoutGap="10px">
+            <li (click)="scrollToSection('section1')"  [ngClass]="{ 'active': activeSection === 'section1' }" (click)="isMenuOpen = false;"><a>Home</a></li>
+            <li (click)="scrollToSection('section2')" [ngClass]="{ 'active': activeSection === 'section2' }" (click)="isMenuOpen = false;"><a>Features</a></li>
+            <li (click)="scrollToSection('section3')" [ngClass]="{ 'active': activeSection === 'section3' }" (click)="isMenuOpen = false;"><a>Solutions</a></li>
+            <li (click)="scrollToSection('section3')" [ngClass]="{ 'active': activeSection === 'section3' }" (click)="isMenuOpen = false;"><a>Process</a></li>
+            <li (click)="scrollToSection('section3')" [ngClass]="{ 'active': activeSection === 'section3' }" (click)="isMenuOpen = false;"><a>Pricing</a></li>
+            <li (click)="scrollToSection('section3')" [ngClass]="{ 'active': activeSection === 'section3' }" (click)="isMenuOpen = false;"><a>Blogs</a></li>
+        </ul>
+    </div>
+</div>

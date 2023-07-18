@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/griiken",
             "index": "src/index.html",
+
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -30,7 +31,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/boxicons/css/boxicons.min.css"
             ],
             "scripts": []
           },
